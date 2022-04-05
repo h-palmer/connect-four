@@ -99,7 +99,12 @@ function handleClick(evt) {
 
   // check for win
   if (checkForWin()) {
-    return endGame(`Player ${currPlayer} won!`);
+    if (currPlayer === 1) {
+    return endGame('Purple is the winner!');
+    }
+    if (currPlayer === 2) {
+      return endGame('Gold is the winner!')
+    }
   }
 
   // check for tie
