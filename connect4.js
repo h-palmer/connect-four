@@ -120,7 +120,9 @@ function handleClick(evt) {
 
   // check for tie
   if (board.every(row => row.every(cell => cell))) {
-    return endGame('Tie!');
+    setTimeout(function() {
+    return endGame('Tie!')
+    }, 50);
   }
   // switch players
   currPlayer = currPlayer === 1 ? 2 : 1;
