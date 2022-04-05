@@ -1,0 +1,59 @@
+/* game board table */
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  background-image: url('images/flowers.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+#title {
+  margin: center;
+  padding-left: 450px;
+  font-size: 15em;
+  font-family: 'Amatic SC', cursive;
+  color:rgb(105, 71, 120)
+}
+
+#board td {
+  width: 250px;
+  height: 250px;
+  border: solid 1px rgb(105, 71, 120);
+  background-color: rgb(252, 252, 244);
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.p1 {
+  background-color: rgb(111, 86, 122);
+}
+
+.piece.p2 {
+  background-color: rgb(234, 205, 92);
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px rgb(212, 221, 206);
+}
+
+#column-top td:hover {
+  background-color: rgb(111, 86, 122);;
+}
