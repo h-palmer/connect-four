@@ -25,8 +25,8 @@ body {
 }
 
 #board td {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border: solid 1px rgb(105, 71, 120);
   background-color: rgb(252, 252, 244);
 }
