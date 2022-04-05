@@ -17,8 +17,9 @@ body {
 }
 
 #title {
-  margin: center;
-  padding-left: 140px;
+  margin-top: 50px;
+  margin-left: 140px;
+  margin-bottom: 20px;
   font-size: 5em;
   font-family: 'Amatic SC', cursive;
   color:rgb(105, 71, 120)
@@ -56,4 +57,20 @@ body {
 
 #column-top td:hover {
   background-color: rgb(111, 86, 122);;
+  cursor: pointer;
+}
+
+#restart {
+  margin-top: 25px;
+  margin-left: 250px;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  padding: 3px 10px 3px 10px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.25em;
+  color:rgb(111, 86, 122);
+  background-color: rgb(252, 252, 244);
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 2px 2px rgb(111, 86, 122);
 }

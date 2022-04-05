@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+// create a button that will reload the page
+const button = document.querySelector('button');
+button.addEventListener('click', function() {
+  window.location.reload();
+  return false;
+})
 /** Connect Four
  *
  * Player 1 and 2 alternate turns. On each turn, a piece is dropped down a
@@ -79,6 +85,7 @@ spot.append(piece);
 
 function endGame(msg) {
   alert(msg);
+  
 }
 
 /** handleClick: handle click of column top to play piece */
@@ -100,10 +107,14 @@ function handleClick(evt) {
   // check for win
   if (checkForWin()) {
     if (currPlayer === 1) {
-    return endGame('Purple is the winner!');
+      setTimeout(function() {
+      return endGame('Purple is the winner!');
+      }, 50);
     }
     if (currPlayer === 2) {
+      setTimeout(function() {
       return endGame('Gold is the winner!')
+      }, 50);
     }
   }
 
