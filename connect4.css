@@ -18,15 +18,15 @@ body {
 
 #title {
   margin: center;
-  padding-left: 220px;
+  padding-left: 140px;
   font-size: 5em;
   font-family: 'Amatic SC', cursive;
   color:rgb(105, 71, 120)
 }
 
 #board td {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border: solid 1px rgb(105, 71, 120);
   background-color: rgb(252, 252, 244);
 }
